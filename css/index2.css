@@ -1,0 +1,42 @@
+/* Custom CSS for Animations */
+
+/* Fade in and slide up from below */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.animate-fadeInUp {
+    animation: fadeInUp 1s ease-out both;
+}
+
+/* Slow fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out both;
+}
+
+/* Subtle icon spin for the Vision section */
+@keyframes spinSlow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.animate-spin-slow {
+    animation: spinSlow 10s linear infinite;
+}

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics & Admissions - MAAS MODERN INT'L GROUPS OF SCHOOLS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/index2.css"> 
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'indigo-deep': '#4B0082', // Deep Indigo/Purple
+                        'burnt-orange': '#CC5500', // Burnt Orange/Rust
+                        'pure-white': '#FFFFFF', // Defined pure white color
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* This is where the custom CSS for keyframes lives (also in index.css) */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translate3d(0, 40px, 0); }
+            to { opacity: 1; transform: translate3d(0, 0, 0); }
+        }
+        .animate-fadeInUp { animation: fadeInUp 1s ease-out both; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fadeIn { animation: fadeIn 1s ease-out both; }
+        
+        @keyframes spinSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow { animation: spinSlow 10s linear infinite; }
+    </style>
+    </head>
+<body class="font-sans antialiased bg-pure-white pt-[68px] lg:pt-[80px]"> 
+    
+<nav class="fixed top-0 left-0 w-full z-50 bg-indigo-deep py-4 shadow-xl -mt-px">
+    <div class="container mx-auto px-4">
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex justify-between items-center text-pure-white">
+            
+            <div class="flex space-x-8 text-lg font-medium w-1/3 justify-start">
+                <!-- Home is now in the default hover state -->
+                <a href="index.html" class="nav-link hover:text-burnt-orange transition duration-200">Home</a>
+                
+                <a href="index.html#about" class="nav-link hover:text-burnt-orange transition duration-200">About</a>
+                
+                <!-- Academics & Admission is now highlighted -->
+                <a href="index2.html" class="nav-link text-burnt-orange transition duration-200 border-b-2 border-burnt-orange">Academics & Admission</a>
+            </div>
+
+            <a href="index.html" class="flex-shrink-0">
+                <img src="images/1761927640274.jpg" alt="MAAS MODERN Logo" class="nav-logo h-12" style="border-radius: 25px;">
+            </a>
+
+            <div class="flex space-x-8 items-center text-lg font-medium w-1/3 justify-end">
+                <a href="index3.html#gallery" class="nav-link hover:text-burnt-orange transition duration-200">Gallery</a>
+                <a href="index.html#reviews" class="nav-link hover:text-burnt-orange transition duration-200">Reviews</a>
+                <a href="index.html#faq" class="nav-link hover:text-burnt-orange transition duration-200">FAQ</a>
+                <a href="#contact" class="nav-link hover:text-burnt-orange transition duration-200">Contact</a>
+                <a href="https://wa.me/+2250555907013" target="_blank" class="text-3xl hover:text-burnt-orange transition-colors" aria-label="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Header (Logo & Hamburger) -->
+        <div class="lg:hidden flex justify-between items-center text-pure-white">
+            <a href="#home">
+                <img src="images/1761927640274.jpg" alt="MAAS MODERN Logo" class="nav-logo h-10" style="border-radius: 25px;">
+            </a>
+
+            <button id="hamburger-btn" class="text-3xl focus:outline-none" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-indigo-deep/95 transform transition-transform duration-300 ease-in-out lg:hidden overflow-y-auto">
+        <div class="container mx-auto px-4">
+            
+            <div class="flex justify-end pt-6 pb-4">
+                <button id="close-btn" class="text-pure-white text-4xl focus:outline-none" aria-label="Close Menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="flex flex-col space-y-6 text-pure-white text-2xl font-semibold">
+                <!-- Home is now in the default hover state -->
+                <a href="index.html" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">Home</a>
+                
+                <a href="index.html#about" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">About</a>
+                
+                <!-- Academics & Admission is now highlighted -->
+                <a href="index2.html" class="nav-link-mobile border-b border-burnt-orange/80 text-burnt-orange py-2">Academics & Admission</a>
+                
+                <a href="index3.html#gallery" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">Gallery</a>
+                
+                <a href="index.html#reviews" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">Reviews</a>
+                <a href="index.html#faq" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">FAQ</a>
+                <a href="#contact" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">Contact</a>
+                <a href="https://wa.me/+2250555907013" target="_blank" class="text-4xl text-center pt-8 text-pure-white hover:text-burnt-orange">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <main>
+        
+        <section class="relative bg-indigo-deep pt-16 pb-16 md:pt-24 md:pb-24 overflow-hidden">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-pure-white mb-3 animate-fadeInUp" style="animation-delay: 0.1s;">
+                    Academics & Admission
+                </h1>
+                <p class="text-xl md:text-2xl text-burnt-orange font-semibold animate-fadeInUp" style="animation-delay: 0.3s;">
+                    Shaping Excellence, Fostering Future Leaders.
+                </p>
+            </div>
+        </section>
+
+        <section id="who-we-are" class="py-16 md:py-24 bg-pure-white overflow-hidden">
+            <div class="container mx-auto px-6">
+                
+                <h2 class="text-4xl md:text-5xl font-extrabold text-indigo-deep mb-12 text-center animate-fadeInUp">
+                    <i class="fas fa-handshake text-burnt-orange mr-3"></i> Who We Are
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    
+                    <div class="lg:pr-10">
+                        <p class="text-2xl md:text-3xl font-bold text-indigo-deep mb-6 leading-relaxed border-l-4 border-burnt-orange pl-4 animate-fadeIn" style="animation-delay: 0.5s;">
+                            MAAS MODERN INT'L GROUPS OF SCHOOLS <span class="text-burnt-orange">(GOVERNMENT APPROVED)</span> is a leading educational institution dedicated to using education as a transformative tool to shape lives and build future leaders.
+                        </p>
+
+                        <div class="space-y-4 text-gray-700 text-lg">
+                            <div class="flex items-start animate-fadeInUp" style="animation-delay: 0.7s;">
+                                <i class="fas fa-calendar-alt text-2xl text-burnt-orange mt-1 mr-3 flex-shrink-0"></i>
+                                <p>
+                                    Established: We proudly began our journey in 2012 in Habitat, Abidjan, Ivory Coast.
+                                </p>
+                            </div>
+                            <div class="flex items-start animate-fadeInUp" style="animation-delay: 0.9s;">
+                                <i class="fas fa-map-marked-alt text-2xl text-burnt-orange mt-1 mr-3 flex-shrink-0"></i>
+                                <p>
+                                    Expansion (Abidjan): Rapidly expanded to three locations within Abidjan: Habitat Adjame, Williams Ville, and Macaci.
+                                </p>
+                            </div>
+                            <div class="flex items-start animate-fadeInUp" style="animation-delay: 1.1s;">
+                                <i class="fas fa-globe-africa text-2xl text-burnt-orange mt-1 mr-3 flex-shrink-0"></i>
+                                <p>
+                                    Extended to Nigeria: Established successful branches in Owode, Oyo State and Ikorodu, Lagos State.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative h-[450px] md:h-[550px] lg:h-[600px] mt-8 lg:mt-0">
+                        
+                        <img src="images/1761950580908.jpg" alt="Students in Classroom" 
+                             class="w-full h-full object-cover rounded-2xl shadow-2xl absolute top-0 left-0 animate-fadeIn" style="animation-delay: 1.3s;">
+
+                        <img src="images/1761950565271.jpg" alt="School Exterior" 
+                             class="hidden md:block w-48 h-auto object-cover rounded-xl shadow-xl border-4 border-pure-white absolute bottom-[-30px] right-[-30px] lg:bottom-10 lg:right-10 z-10 transition duration-500 hover:scale-105 animate-fadeIn" style="animation-delay: 1.5s;">
+                        
+                        <div class="absolute top-10 left-10 w-24 h-24 bg-burnt-orange/20 rounded-full animate-fadeIn" style="animation-delay: 1.7s;"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="vision" class="py-16 md:py-24 bg-indigo-deep text-pure-white overflow-hidden">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-8 animate-fadeInUp" style="animation-delay: 0.1s;">
+                    <i class="fas fa-eye text-burnt-orange animate-spin-slow mr-3"></i> Our Vision
+                </h2>
+                <p class="text-xl md:text-3xl font-light leading-snug px-4 border-y-2 border-burnt-orange py-6 animate-fadeIn" style="animation-delay: 0.5s;">
+                    To be a globally recognized institution that nurtures young minds, fostering excellence, leadership, and innovation in education.
+                </p>
+            </div>
+        </section>
+        <section class="py-16 md:py-24 bg-pure-white" id="mission-values">
+            <div class="container mx-auto px-6">
+
+                <div class="mb-20">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-indigo-deep mb-12 text-center animate-fadeInUp">
+                        <i class="fas fa-bullseye text-burnt-orange mr-3"></i> Our Mission
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        
+                        <div class="text-center p-6 border-b-4 border-burnt-orange rounded-lg shadow-xl hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 animate-fadeInUp" style="animation-delay: 0.3s;">
+                            <div class="text-5xl text-indigo-deep mb-4">
+                                <i class="fas fa-book-reader"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-indigo-deep mb-2">High-Quality Education</h3>
+                            <p class="text-gray-700">
+                                Providing high-quality education for lifelong success and global competitiveness.
+                            </p>
+                        </div>
+
+                        <div class="text-center p-6 border-b-4 border-indigo-deep rounded-lg shadow-xl hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 animate-fadeInUp" style="animation-delay: 0.6s;">
+                            <div class="text-5xl text-burnt-orange mb-4">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-indigo-deep mb-2">Cultivating Excellence</h3>
+                            <p class="text-gray-700">
+                                Cultivating academic, moral, and social excellence in every student.
+                            </p>
+                        </div>
+
+                        <div class="text-center p-6 border-b-4 border-burnt-orange rounded-lg shadow-xl hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 animate-fadeInUp" style="animation-delay: 0.9s;">
+                            <div class="text-5xl text-indigo-deep mb-4">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-indigo-deep mb-2">Well-Rounded Individuals</h3>
+                            <p class="text-gray-700">
+                                Developing well-rounded individuals prepared for leadership and valuable contribution to society.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-indigo-deep mb-12 text-center animate-fadeInUp" style="animation-delay: 1.2s;">
+                        <i class="fas fa-hand-holding-heart text-burnt-orange mr-3"></i> Our Core Values
+                    </h2>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
+                        
+                        <div class="value-card group text-center p-4 rounded-xl border border-gray-100 transition duration-300 transform hover:scale-105 hover:bg-indigo-deep hover:shadow-2xl hover:border-burnt-orange animate-fadeInUp" style="animation-delay: 1.4s;">
+                            <i class="fas fa-star text-4xl text-burnt-orange mb-2 group-hover:text-pure-white transition duration-300"></i>
+                            <p class="font-bold text-indigo-deep group-hover:text-pure-white transition duration-300">Excellence</p>
+                        </div>
+
+                        <div class="value-card group text-center p-4 rounded-xl border border-gray-100 transition duration-300 transform hover:scale-105 hover:bg-indigo-deep hover:shadow-2xl hover:border-burnt-orange animate-fadeInUp" style="animation-delay: 1.6s;">
+                           <i class="fas fa-handshake text-4xl text-burnt-orange mb-2 group-hover:text-pure-white transition duration-300"></i>
+                            <p class="font-bold text-indigo-deep group-hover:text-pure-white transition duration-300">Integrity</p>
+                        </div>
+
+                        <div class="value-card group text-center p-4 rounded-xl border border-gray-100 transition duration-300 transform hover:scale-105 hover:bg-indigo-deep hover:shadow-2xl hover:border-burnt-orange animate-fadeInUp" style="animation-delay: 1.8s;">
+                            <i class="fas fa-lightbulb text-4xl text-burnt-orange mb-2 group-hover:text-pure-white transition duration-300"></i>
+                            <p class="font-bold text-indigo-deep group-hover:text-pure-white transition duration-300">Innovation</p>
+                        </div>
+
+                        <div class="value-card group text-center p-4 rounded-xl border border-gray-100 transition duration-300 transform hover:scale-105 hover:bg-indigo-deep hover:shadow-2xl hover:border-burnt-orange animate-fadeInUp" style="animation-delay: 2.0s;">
+                            <i class="fas fa-user-tie text-4xl text-burnt-orange mb-2 group-hover:text-pure-white transition duration-300"></i>
+                            <p class="font-bold text-indigo-deep group-hover:text-pure-white transition duration-300">Leadership</p>
+                        </div>
+
+                        <div class="value-card group text-center p-4 rounded-xl border border-gray-100 transition duration-300 transform hover:scale-105 hover:bg-indigo-deep hover:shadow-2xl hover:border-burnt-orange animate-fadeInUp" style="animation-delay: 2.2s;">
+                            <i class="fas fa-check-double text-4xl text-burnt-orange mb-2 group-hover:text-pure-white transition duration-300"></i>
+                            <p class="font-bold text-indigo-deep group-hover:text-pure-white transition duration-300">Discipline</p>
+                        </div>
+
+                        <div class="value-card group text-center p-4 rounded-xl border border-gray-100 transition duration-300 transform hover:scale-105 hover:bg-indigo-deep hover:shadow-2xl hover:border-burnt-orange animate-fadeInUp" style="animation-delay: 2.4s;">
+                            <i class="fas fa-hand-holding-medical text-4xl text-burnt-orange mb-2 group-hover:text-pure-white transition duration-300"></i>
+                            <p class="font-bold text-indigo-deep group-hover:text-pure-white transition duration-300">Community Service</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="why-choose-us" class="py-16 md:py-24 bg-gray-50 overflow-hidden">
+            <div class="container mx-auto px-6">
+                
+                <h2 class="text-4xl md:text-5xl font-extrabold text-indigo-deep mb-4 text-center animate-fadeInUp">
+                    <i class="fas fa-magic text-burnt-orange mr-3"></i> Why Choose Us?
+                </h2>
+                <p class="text-xl text-gray-600 mb-16 text-center max-w-3xl mx-auto animate-fadeInUp" style="animation-delay: 0.3s;">
+                    Experience the difference that sets MAAS MODERN apart. We provide an environment where every child can thrive, learn, and lead.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    
+                    <div class="p-8 bg-pure-white rounded-xl shadow-lg border-t-4 border-burnt-orange transition duration-500 hover:shadow-2xl transform hover:scale-[1.02] animate-fadeInUp" style="animation-delay: 0.5s;">
+                        <div class="text-5xl text-burnt-orange mb-4">
+                            <i class="fas fa-globe-africa"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-indigo-deep mb-3">Global Curriculum</h3>
+                        <p class="text-gray-700">
+                            We seamlessly integrate Nigerian, British, and Ghanaian curricula to offer a world-class, comprehensive education that prepares students for global challenges.
+                        </p>
+                    </div>
+
+                    <div class="p-8 bg-pure-white rounded-xl shadow-lg border-t-4 border-indigo-deep transition duration-500 hover:shadow-2xl transform hover:scale-[1.02] animate-fadeInUp" style="animation-delay: 0.7s;">
+                        <div class="text-5xl text-indigo-deep mb-4">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-indigo-deep mb-3">Government Approved</h3>
+                        <p class="text-gray-700">
+                            Fully recognized and approved by government education bodies, ensuring our certificates and qualifications hold official standing and value.
+                        </p>
+                    </div>
+
+                    <div class="p-8 bg-pure-white rounded-xl shadow-lg border-t-4 border-burnt-orange transition duration-500 hover:shadow-2xl transform hover:scale-[1.02] animate-fadeInUp" style="animation-delay: 0.9s;">
+                        <div class="text-5xl text-burnt-orange mb-4">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-indigo-deep mb-3">Modern Facilities</h3>
+                        <p class="text-gray-700">
+                            Equipped with state-of-the-art Science and Computer laboratories, a library, and well-ventilated classrooms for an optimal learning experience.
+                        </p>
+                    </div>
+
+                    <div class="p-8 bg-pure-white rounded-xl shadow-lg border-t-4 border-indigo-deep transition duration-500 hover:shadow-2xl transform hover:scale-[1.02] animate-fadeInUp" style="animation-delay: 1.1s;">
+                        <div class="text-5xl text-indigo-deep mb-4">
+                            <i class="fas fa-chalkboard-user"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-indigo-deep mb-3">Dedicated, Trained Staff</h3>
+                        <p class="text-gray-700">
+                            Our team of professional, highly trained, and passionate educators is committed to providing individualized attention and mentorship to every student.
+                        </p>
+                    </div>
+
+                    <div class="p-8 bg-pure-white rounded-xl shadow-lg border-t-4 border-burnt-orange transition duration-500 hover:shadow-2xl transform hover:scale-[1.02] animate-fadeInUp" style="animation-delay: 1.3s;">
+                        <div class="text-5xl text-burnt-orange mb-4">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-indigo-deep mb-3">Strong Moral Focus</h3>
+                        <p class="text-gray-700">
+                            We place high importance on character development, teaching core moral values, discipline, and respect alongside academic learning.
+                        </p>
+                    </div>
+                    
+                    <div class="p-8 bg-pure-white rounded-xl shadow-lg border-t-4 border-indigo-deep transition duration-500 hover:shadow-2xl transform hover:scale-[1.02] animate-fadeInUp" style="animation-delay: 1.5s;">
+                        <div class="text-5xl text-indigo-deep mb-4">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-indigo-deep mb-3">Proven Track Record</h3>
+                        <p class="text-gray-700">
+                            Consistently achieving high success rates in major examinations, including WAEC, NECO, and BECE, showcasing our academic excellence.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+<section id="educational-approach" class="py-16 md:py-24 bg-pure-white overflow-hidden">
+            <div class="container mx-auto px-6 max-w-6xl">
+                
+                <h2 class="text-4xl md:text-5xl font-extrabold text-indigo-deep mb-12 text-center animate-fadeInUp">
+                    <i class="fas fa-brain text-burnt-orange mr-3"></i> Our Pedagogy
+                </h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    
+                    <div class="space-y-10 text-gray-700 text-lg">
+                        
+                        <div class="flex items-start bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-burnt-orange animate-fadeInLeft" style="animation-delay: 0.3s;">
+                            <i class="fas fa-check-to-slot text-3xl text-burnt-orange mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold text-indigo-deep mb-1">Integrated & Holistic Learning</h3>
+                                <p>We blend the best of local (Nigerian), British, and Ghanaian curricula to offer a holistic learning experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-indigo-deep animate-fadeInLeft" style="animation-delay: 0.6s;">
+                            <i class="fas fa-user-graduate text-3xl text-indigo-deep mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold text-indigo-deep mb-1">Student-Centric Methodology</h3>
+                                <p>Our teaching is focused on the individual student, encouraging inquiry, critical thinking, and problem-solving.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-burnt-orange animate-fadeInLeft" style="animation-delay: 0.9s;">
+                            <i class="fas fa-chalkboard-user text-3xl text-burnt-orange mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold text-indigo-deep mb-1">Technology & Practical Application</h3>
+                                <p>We leverage educational technology and emphasize practical application in labs and projects to make learning relevant.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="h-96 w-full lg:h-full rounded-xl shadow-2xl overflow-hidden animate-fadeInRight" style="animation-delay: 0.5s;">
+                        <img src="images/1761950535710.jpg" alt="A teacher helping a student with a digital learning device." class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+      
+<section class="py-12 md:py-20 bg-indigo-deep" id="contact">
+    <div class="container mx-auto px-4 max-w-2xl">
+
+        <div class="text-center mb-10 md:mb-12 text-pure-white">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-3">
+                Get in Touch with MAAS Modern
+            </h2>
+            <p class="text-md text-pure-white/80">
+                We're here to answer your questions. Use our direct contact details below.
+            </p>
+        </div>
+
+        <div class="bg-pure-white p-2 sm:p-4 rounded-xl shadow-2xl">
+            <div class="bg-indigo-deep p-6 md:p-8 rounded-lg text-pure-white shadow-lg">
+                <h3 class="text-xl font-bold mb-5 border-b border-burnt-orange pb-3">Direct Contact Details</h3>
+
+                <div class="space-y-6 md:space-y-8">
+
+                    <div class="flex items-start">
+                        <i class="fas fa-phone text-2xl text-burnt-orange mt-1 flex-shrink-0 mr-4"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Call Us</h4>
+                            <p class="text-pure-white/80 text-sm"><a href="tel:+18005551234" class="hover:underline">**+1 (800) 555-1234**</a> (Admissions)</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope text-2xl text-burnt-orange mt-1 flex-shrink-0 mr-4"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Email Us</h4>
+                            <p class="text-pure-white/80 text-sm"><a href="mailto:mass@gmail.com" class="hover:underline">**mass@gmail.com**</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-burnt-orange/50">
+                        <h4 class="font-semibold text-lg mb-3">Connect on Social Media</h4>
+                        <div class="flex space-x-5 text-xl">
+                            <a href="https://www.facebook.com/MAASINTERNATIONALSCHOOL" class="text-pure-white hover:text-burnt-orange transition duration-200" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-pure-white hover:text-burnt-orange transition duration-200" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-pure-white hover:text-burnt-orange transition duration-200" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-pure-white hover:text-burnt-orange transition duration-200" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-indigo-deep pt-16 pb-8 text-pure-white">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 md:gap-8">
+                
+                <div class="col-span-2 md:col-span-2 lg:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="images/1761927640274.jpg" alt="MAAS MODERN Logo" class="w-12 h-12 mr-3" style="border-radius: 25px;">
+                        <span class="text-2xl font-extrabold tracking-wider">MAAS MODERN</span>
+                    </div>
+                    <p class="text-pure-white/80 text-sm mb-4 max-w-xs">
+                        Committed to academic excellence, integrity, and social responsibility, shaping global citizens.
+                    </p>
+                    <div class="flex space-x-4 text-xl">
+                        <a href="https://www.facebook.com/MAASINTERNATIONALSCHOOL" class="text-pure-white/80 hover:text-burnt-orange transition duration-200"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-pure-white/80 hover:text-burnt-orange transition duration-200"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-pure-white/80 hover:text-burnt-orange transition duration-200"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-pure-white/80 hover:text-burnt-orange transition duration-200"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4 border-b border-burnt-orange pb-2">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html#about" class="text-pure-white/80 hover:text-burnt-orange transition duration-200">About Us</a></li>
+                        <li><a href="index2.html" class="text-pure-white/80 hover:text-burnt-orange transition duration-200">Academics</a></li>
+                        <li><a href="index3.html#gallery" class="text-pure-white/80 hover:text-burnt-orange transition duration-200">Gallery</a></li>
+                        <li><a href="index3.html" class="text-pure-white/80 hover:text-burnt-orange transition duration-200">More Info</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4 border-b border-burnt-orange pb-2">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Enrollment Portal</li>
+                        <li>Career Opportunities</li>
+                        <li>Staff Directory</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                
+                <div class="col-span-2 md:col-span-2 lg:col-span-1">
+                    <h4 class="text-lg font-bold mb-4 border-b border-burnt-orange pb-2">Newsletter</h4>
+                    <p class="text-pure-white/80 text-sm mb-3">
+                        Subscribe for updates.
+                    </p>
+                    <form>
+                        <input type="email" placeholder="Your Email" class="w-full px-3 py-2 text-sm rounded-lg bg-pure-white/10 border border-burnt-orange focus:ring-burnt-orange focus:border-burnt-orange text-pure-white mb-2" required>
+                        <button type="submit" class="w-full px-3 py-2 text-sm font-semibold bg-burnt-orange text-pure-white rounded-lg hover:bg-[#a64300] transition duration-200">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-pure-white/20 text-center">
+                <p class="text-sm text-pure-white/60">
+                    &copy; <span id="current-year"></span> MAAS MODERN INT'L GROUPS OF SCHOOLS. All rights reserved. 
+                </p>
+            </div>
+        </div>
+    </footer>
+
+      <script>
+        // JS for Hamburger Menu Toggle
+        document.getElementById('hamburger-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.remove('hidden');
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+            // JS for Current Year in Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+      </script>
+        

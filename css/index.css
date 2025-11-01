@@ -1,0 +1,50 @@
+/* Custom CSS for MAAS MODERN INT'L GROUPS OF SCHOOLS */
+
+/* Slideshow and Header Overlay Styles */
+.header-bg-overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* Reduced opacity for visibility */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth transition for slides */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Navigation Styles */
+.nav-logo {
+    max-height: 40px; /* Adjust logo size */
+    width: auto;
+}
+
+.nav-link:hover {
+    color: #CC5500; /* Burnt Orange on hover */
+    transition: color 0.3s ease;
+}
+
+
+
+/* Positioning for the overlapping image effect on desktop (lg) */
+@media (min-width: 1024px) {
+    #overlap-image {
+        /* Positioned halfway onto the left side of the big image */
+        top: 60%;
+        left: -20%; /* Pushing it halfway onto the left column */
+        width: 40%; /* Adjust size for visual balance */
+        max-width: 280px;
+        transform: rotate(-3deg); /* Add a slight tilt for visual interest */
+    }
+}

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAAS MODERN INT'L GROUPS OF SCHOOLS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/index.css">
+
+    <script>
+        // Tailwind Configuration for Custom Colors and Fonts
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'indigo-deep': '#4B0082', // Deep Indigo/Purple
+                        'burnt-orange': '#CC5500', // Burnt Orange/Rust
+                        'pure-white': '#FFFFFF',
+                        'soft-gray': '#F7F7F7', // Added for consistency in other sections
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-pure-white">
+
+<nav class="fixed top-0 left-0 w-full z-50 bg-indigo-deep py-4 shadow-xl -mt-px">
+    <div class="container mx-auto px-4">
+        
+        <div class="hidden lg:flex justify-between items-center text-pure-white">
+            
+            <div class="flex space-x-8 text-lg font-medium w-1/3 justify-start">
+                <a href="#home" class="nav-link text-burnt-orange transition duration-200 border-b-2 border-burnt-orange">Home</a>
+                
+                <a href="#about" class="nav-link hover:text-burnt-orange transition duration-200">About</a>
+                <a href="index2.html" class="nav-link hover:text-burnt-orange transition duration-200">Academics & Admission</a>
+            </div>
+
+            <a href="#home" class="flex-shrink-0">
+                <img src="images/1761927640274.jpg" alt="MAAS MODERN Logo" class="nav-logo h-12" style="border-radius: 25px;">
+            </a>
+
+            <div class="flex space-x-8 items-center text-lg font-medium w-1/3 justify-end">
+                <a href="index3.html" class="nav-link hover:text-burnt-orange transition duration-200">Gallery</a>
+                <a href="#reviews" class="nav-link hover:text-burnt-orange transition duration-200">Reviews</a>
+                <a href="#faq" class="nav-link hover:text-burnt-orange transition duration-200">FAQ</a>
+                <a href="#contact" class="nav-link hover:text-burnt-orange transition duration-200">Contact</a>
+                <a href="https://wa.me/+2250555907013" target="_blank" class="text-3xl hover:text-burnt-orange transition-colors" aria-label="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="lg:hidden flex justify-between items-center text-pure-white">
+            <a href="#home">
+                <img src="images/1761927640274.jpg" alt="MAAS MODERN Logo" class="nav-logo h-10" style="border-radius: 25px;">
+            </a>
+
+            <button id="hamburger-btn" class="text-3xl focus:outline-none" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-indigo-deep/95 transform transition-transform duration-300 ease-in-out lg:hidden overflow-y-auto">
+        <div class="container mx-auto px-4">
+            
+            <div class="flex justify-end pt-6 pb-4">
+                <button id="close-btn" class="text-pure-white text-4xl focus:outline-none" aria-label="Close Menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="flex flex-col space-y-6 text-pure-white text-2xl font-semibold">
+                <a href="#home" class="nav-link-mobile border-b border-burnt-orange/80 text-burnt-orange py-2">Home</a>
+                
+                <a href="#about" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">About</a>
+                <a href="index2.html" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">Academics & Admission</a>
+                
+                <a href="#gallery" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">Gallery</a>
+                
+                <a href="#reviews" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">Reviews</a>
+                <a href="#faq" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">FAQ</a>
+                <a href="#contact" class="nav-link-mobile border-b border-pure-white/20 hover:text-burnt-orange py-2">Contact</a>
+                <a href="https://wa.me/+2250555907013" target="_blank" class="text-4xl text-center pt-8 text-pure-white hover:text-burnt-orange">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <header id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div id="slideshow" class="absolute inset-0">
+            <div class="slide active" style="background-image: url('images/1761927737653.jpg');"></div>
+            <div class="slide" style="background-image: url('images/1761927668643.jpg');"></div>
+            <div class="slide" style="background-image: url('images/1761927673441.jpg');"></div>
+            <div class="slide" style="background-image: url('images/1761927681183.jpg');"></div>
+        </div>
+        
+        <div class="header-bg-overlay bg-indigo-deep/50 absolute inset-0"></div>
+
+        <div class="relative z-10 text-center text-pure-white max-w-4xl mx-auto px-6">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 animate-fadeInUp">
+                MAAS MODERN INT'L GROUPS OF SCHOOLS
+            </h1>
+            <p class="text-lg md:text-xl mb-8 font-light max-w-3xl mx-auto">
+                Nurturing future leaders through exceptional academic standards, innovative teaching, and a global perspective.
+            </p>
+            <a href="index2.html" class="inline-block px-10 py-4 text-lg font-semibold bg-burnt-orange text-pure-white rounded-full shadow-lg hover:bg-[#a64300] transition duration-300 transform hover:scale-105">
+                Explore More
+            </a>
+        </div>
+    </header>
+    
+    <main>
+
+<section class="py-16 md:py-24 bg-pure-white" id="features">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+            
+            <div class="flex p-6 border border-gray-100 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+                <div class="flex-shrink-0 text-indigo-deep mr-5 pt-1">
+                    <i class="fas fa-graduation-cap text-4xl"></i> 
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-deep mb-2">Top Instructors</h3>
+                    <p class="text-gray-700 text-sm">
+                        Learn from dedicated educators who are experts in their fields, committed to student success and mentorship.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex p-6 border border-gray-100 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+                <div class="flex-shrink-0 text-indigo-deep mr-5 pt-1">
+                    <i class="fas fa-book-open-reader text-4xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-deep mb-2">Quality Learning</h3>
+                    <p class="text-gray-700 text-sm">
+                        We provide a robust and modern curriculum, fostering critical thinking and a lifelong passion for knowledge.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex p-6 border border-gray-100 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+                <div class="flex-shrink-0 text-indigo-deep mr-5 pt-1">
+                    <i class="fas fa-file-invoice text-4xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-deep mb-2">Easy Enrollment</h3>
+                    <p class="text-gray-700 text-sm">
+                        A streamlined and transparent admission process ensures a quick and hassle-free start to your child's education.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-16 md:py-24 bg-pure-white" id="about">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="order-2 lg:order-1">
+                <p class="text-sm font-semibold uppercase text-burnt-orange tracking-widest mb-2">
+                    ⭐ Our Foundation
+                </p>
+                <h2 class="text-4xl md:text-5xl font-bold text-indigo-deep mb-6 leading-tight">
+                    Shaping Global Citizens 
+                </h2>
+                <p class="text-gray-600 mb-8 text-lg">
+                    MAAS MODERN INT'L GROUPS OF SCHOOLS is committed to fostering academic excellence, integrity, and social responsibility. Our unique approach blends a standardized syllabus with rich extracurricular activities, ensuring holistic development for every student. We believe in creating a supportive environment where innovation and personal growth thrive.
+                </p>
+                
+                <a href="index2.html" class="inline-block px-8 py-3 text-base font-semibold bg-indigo-deep text-pure-white rounded-lg shadow-md hover:bg-[#3d0069] transition duration-300 transform hover:scale-[1.02]">
+                    More Info
+                </a>
+
+                <div class="mt-8 flex space-x-4">
+                    <img src="images/1761927684373.jpg" alt="Student learning" class="w-1/3 h-24 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="images/1761927715443.jpg" alt="Classroom activity" class="w-1/3 h-24 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img id="overlap-anchor" src="images/1761927737653.jpg" alt="School library" class="w-1/3 h-24 object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                </div>
+            </div>
+
+            <div class="order-1 lg:order-2 relative h-[400px] md:h-[500px]">
+                <img id="big-image" src="images/1761927749018.jpg" alt="Happy students at MAAS MODERN" class="w-full h-full object-cover rounded-2xl shadow-2xl relative z-10">
+
+                <img id="overlap-image" src="images/1761927759405.jpg" alt="Library Overlap" class="absolute hidden lg:block w-56 h-auto object-cover rounded-xl shadow-2xl border-4 border-pure-white z-20 transition duration-500 hover:scale-105">
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section class="py-16 md:py-24 bg-indigo-deep text-pure-white" id="academics">
+    <div class="container mx-auto px-6">
+        
+        <div class="text-center max-w-4xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+                Our Global Academic Framework 🎓
+            </h2>
+            <p class="text-lg text-pure-white/80">
+                We offer a dynamic blend of a rigorous standardized curriculum and comprehensive extracurricular programs, designed to prepare students for success on the global stage.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16">
+            
+            <div class="lg:order-1 order-1">
+                <img src="images/1761950783453.jpg" alt="Standardized Syllabus" class="w-full h-72 object-cover rounded-lg shadow-xl transition duration-500 hover:scale-[1.02]">
+            </div>
+            <div class="lg:order-2 order-2 flex items-center p-4">
+                <div class="text-center lg:text-left">
+                    <h3 class="text-3xl font-bold mb-3 text-burnt-orange">Standardized Syllabus</h3>
+                    <p class="text-pure-white/90 text-lg">
+                        We follow a globally recognized syllabus, ensuring that our students are equipped with competitive knowledge and skills relevant to international educational standards and future careers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:order-3 order-4 flex items-center p-4">
+                <div class="text-center lg:text-right">
+                    <h3 class="text-3xl font-bold mb-3 text-burnt-orange">Extracurricular Activities</h3>
+                    <p class="text-pure-white/90 text-lg">
+                        Beyond the classroom, we offer diverse activities—from robotics to sports—that foster teamwork, creativity, and leadership, essential for well-rounded development.
+                    </p>
+                </div>
+            </div>
+            <div class="lg:order-4 order-3">
+                <img src="images/1761927661754.jpg" alt="Extracurricular Activities" class="w-full h-72 object-cover rounded-lg shadow-xl transition duration-500 hover:scale-[1.02]">
+            </div>
+
+            <div class="lg:order-5 order-5">
+                <img src="images/1761927815042.jpg" alt="Smooth Admission Process" class="w-full h-72 object-cover rounded-lg shadow-xl transition duration-500 hover:scale-[1.02]">
+            </div>
+            <div class="lg:order-6 order-6 flex items-center p-4">
+                <div class="text-center lg:text-left">
+                    <h3 class="text-3xl font-bold mb-3 text-burnt-orange">Smooth Admission Process</h3>
+                    <p class="text-pure-white/90 text-lg">
+                        Our streamlined and digital admission process is designed for clarity and ease, providing all necessary support for parents to enroll their children quickly and confidently.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="text-center mt-16">
+            <a href="index2.html" class="inline-block px-10 py-4 text-lg font-semibold bg-burnt-orange text-pure-white rounded-full shadow-lg hover:bg-[#a64300] transition duration-300 transform hover:scale-105">
+                Explore More
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="py-16 md:py-24 bg-pure-white text-indigo-deep" id="reviews">
+    <div class="container mx-auto px-6">
+
+        <div class="text-center max-w-4xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+                Voices of Our Community 💖
+            </h2>
+            <p class="text-lg text-gray-600">
+                Hear directly from parents and students about their experience with MAAS MODERN INT'L GROUPS OF SCHOOLS.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            
+            <div class="bg-pure-white p-8 rounded-xl shadow-2xl text-gray-700 relative overflow-hidden transition duration-500 hover:scale-[1.03] hover:shadow-burnt-orange/50 group">
+                <i class="fas fa-quote-left text-4xl text-burnt-orange opacity-75 absolute top-4 left-4 transition duration-500 group-hover:scale-110"></i>
+                
+                <p class="text-lg italic mt-10 mb-6 relative z-10">
+                    "The dedication of the teachers is truly exceptional. My child has thrived both academically and socially since joining MAAS Modern. Highly recommended!"
+                </p>
+                
+                <div class="text-burnt-orange mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="flex items-center">
+                    <i class="fas fa-user-circle text-3xl text-indigo-deep mr-3"></i>
+                    <div>
+                        <p class="font-bold text-indigo-deep">Mrs. Amina Yusuf</p>
+                        <p class="text-sm text-gray-500">Parent, Grade 4</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-pure-white p-8 rounded-xl shadow-2xl text-gray-700 relative overflow-hidden transition duration-500 hover:scale-[1.03] hover:shadow-burnt-orange/50 group">
+                <i class="fas fa-quote-left text-4xl text-burnt-orange opacity-75 absolute top-4 left-4 transition duration-500 group-hover:scale-110"></i>
+                
+                <p class="text-lg italic mt-10 mb-6 relative z-10">
+                    "The science lab and coding workshops here are incredible. I feel truly prepared for university, thanks to the practical skills I gained."
+                </p>
+                
+                <div class="text-burnt-orange mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="flex items-center">
+                    <i class="fas fa-user-graduate text-3xl text-indigo-deep mr-3"></i>
+                    <div>
+                        <p class="font-bold text-indigo-deep">Kwame Nkrumah</p>
+                        <p class="text-sm text-gray-500">Student, Graduating Class</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-pure-white p-8 rounded-xl shadow-2xl text-gray-700 relative overflow-hidden transition duration-500 hover:scale-[1.03] hover:shadow-burnt-orange/50 group">
+                <i class="fas fa-quote-left text-4xl text-burnt-orange opacity-75 absolute top-4 left-4 transition duration-500 group-hover:scale-110"></i>
+                
+                <p class="text-lg italic mt-10 mb-6 relative z-10">
+                    "Communication is excellent. The staff are quick to respond, and I always feel informed about my daughter's progress and school activities."
+                </p>
+                
+                <div class="text-burnt-orange mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="flex items-center">
+                    <i class="fas fa-users-class text-3xl text-indigo-deep mr-3"></i>
+                    <div>
+                        <p class="font-bold text-indigo-deep">Mr. David Chen</p>
+                        <p class="text-sm text-gray-500">Guardian, Grade 7</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</section>
+
+<section class="py-16 md:py-24 bg-pure-white" id="faq">
+    <div class="container mx-auto px-6 max-w-4xl">
+        
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-indigo-deep mb-4">
+                Common Questions 
+            </h2>
+            <p class="text-lg text-gray-600">
+                Find quick answers to the most common inquiries about our school, programs, and enrollment process.
+            </p>
+        </div>
+
+        <div class="space-y-4">
+            
+            <div class="faq-item border border-gray-200 rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                <button class="faq-toggle flex justify-between items-center w-full p-6 text-left bg-indigo-deep text-pure-white font-semibold text-lg transition duration-300 hover:bg-[#3d0069]">
+                    <span>What is the admission process for new students?</span>
+                    <i class="fas fa-chevron-down faq-icon transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <p class="p-6 text-gray-700 bg-pure-white border-t border-gray-100">
+                        The admission process begins with an online application, followed by an entrance examination and a brief interview with the academic head. Final offers are made based on the student's performance and available slots. Please visit our 'Academics & Admission' page for detailed steps.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item border border-gray-200 rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                <button class="faq-toggle flex justify-between items-center w-full p-6 text-left bg-indigo-deep text-pure-white font-semibold text-lg transition duration-300 hover:bg-[#3d0069]">
+                    <span>What extracurricular activities are offered?</span>
+                    <i class="fas fa-chevron-down faq-icon transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <p class="p-6 text-gray-700 bg-pure-white border-t border-gray-100">
+                        We offer a wide range of activities including Robotics, Debate Club, Football, Basketball, Art and Drama, and community service projects. These are designed to promote holistic development.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item border border-gray-200 rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                <button class="faq-toggle flex justify-between items-center w-full p-6 text-left bg-indigo-deep text-pure-white font-semibold text-lg transition duration-300 hover:bg-[#3d0069]">
+                    <span>What is the teacher-to-student ratio?</span>
+                    <i class="fas fa-chevron-down faq-icon transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <p class="p-6 text-gray-700 bg-pure-white border-t border-gray-100">
+                        We maintain a low teacher-to-student ratio of 1:15 to ensure personalized attention and optimal learning outcomes for every child in the classroom.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item border border-gray-200 rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                <button class="faq-toggle flex justify-between items-center w-full p-6 text-left bg-indigo-deep text-pure-white font-semibold text-lg transition duration-300 hover:bg-[#3d0069]">
+                    <span>What is the school fee structure?</span>
+                    <i class="fas fa-chevron-down faq-icon transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <p class="p-6 text-gray-700 bg-pure-white border-t border-gray-100">
+                        The fee structure varies by grade level. Please contact our finance department directly, or schedule a consultation, for the most accurate and current fee details.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-12 md:py-20 bg-indigo-deep" id="contact">
+    <div class="container mx-auto px-4 max-w-2xl">
+
+        <div class="text-center mb-10 md:mb-12 text-pure-white">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-3">
+                Get in Touch with MAAS Modern
+            </h2>
+            <p class="text-md text-pure-white/80">
+                We're here to answer your questions. Use our direct contact details below.
+            </p>
+        </div>
+
+        <div class="bg-pure-white p-2 sm:p-4 rounded-xl shadow-2xl">
+            <div class="bg-indigo-deep p-6 md:p-8 rounded-lg text-pure-white shadow-lg">
+                <h3 class="text-xl font-bold mb-5 border-b border-burnt-orange pb-3">Direct Contact Details</h3>
+
+                <div class="space-y-6 md:space-y-8">
+
+                    <div class="flex items-start">
+                        <i class="fas fa-phone text-2xl text-burnt-orange mt-1 flex-shrink-0 mr-4"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Call Us</h4>
+                            <p class="text-pure-white/80 text-sm"><a href="tel:+18005551234" class="hover:underline">**+1 (800) 555-1234**</a> (Admissions)</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope text-2xl text-burnt-orange mt-1 flex-shrink-0 mr-4"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Email Us</h4>
+                            <p class="text-pure-white/80 text-sm"><a href="mailto:mass@gmail.com" class="hover:underline">**mass@gmail.com**</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-burnt-orange/50">
+                        <h4 class="font-semibold text-lg mb-3">Connect on Social Media</h4>
+                        <div class="flex space-x-5 text-xl">
+                            <a href="https://www.facebook.com/MAASINTERNATIONALSCHOOL" class="text-pure-white hover:text-burnt-orange transition duration-200" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-pure-white hover:text-burnt-orange transition duration-200" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-pure-white hover:text-burnt-orange transition duration-200" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-pure-white hover:text-burnt-orange transition duration-200" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <footer class="bg-indigo-deep pt-16 pb-8 text-pure-white">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 md:gap-8">
+                
+                <div class="col-span-2 md:col-span-2 lg:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="images/1761927640274.jpg" alt="MAAS MODERN Logo" class="w-12 h-12 mr-3" style="border-radius: 25px;">
+                        <span class="text-2xl font-extrabold tracking-wider">MAAS MODERN</span>
+                    </div>
+                    <p class="text-pure-white/80 text-sm mb-4 max-w-xs">
+                        Committed to academic excellence, integrity, and social responsibility, shaping global citizens.
+                    </p>
+                    <div class="flex space-x-4 text-xl">
+                        <a href="https://www.facebook.com/MAASINTERNATIONALSCHOOL" class="text-pure-white/80 hover:text-burnt-orange transition duration-200"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-pure-white/80 hover:text-burnt-orange transition duration-200"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-pure-white/80 hover:text-burnt-orange transition duration-200"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-pure-white/80 hover:text-burnt-orange transition duration-200"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4 border-b border-burnt-orange pb-2">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="text-pure-white/80 hover:text-burnt-orange transition duration-200">About Us</a></li>
+                        <li><a href="index2.html" class="text-pure-white/80 hover:text-burnt-orange transition duration-200">Academics</a></li>
+                        <li><a href="index3.html#gallery" class="text-pure-white/80 hover:text-burnt-orange transition duration-200">Gallery</a></li>
+                        <li><a href="index3.html" class="text-pure-white/80 hover:text-burnt-orange transition duration-200">More Info</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4 border-b border-burnt-orange pb-2">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Enrollment Portal</li>
+                        <li>Career Opportunities</li>
+                        <li>Staff Directory</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                
+                <div class="col-span-2 md:col-span-2 lg:col-span-1">
+                    <h4 class="text-lg font-bold mb-4 border-b border-burnt-orange pb-2">Newsletter</h4>
+                    <p class="text-pure-white/80 text-sm mb-3">
+                        Subscribe for updates.
+                    </p>
+                    <form>
+                        <input type="email" placeholder="Your Email" class="w-full px-3 py-2 text-sm rounded-lg bg-pure-white/10 border border-burnt-orange focus:ring-burnt-orange focus:border-burnt-orange text-pure-white mb-2" required>
+                        <button type="submit" class="w-full px-3 py-2 text-sm font-semibold bg-burnt-orange text-pure-white rounded-lg hover:bg-[#a64300] transition duration-200">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-pure-white/20 text-center">
+                <p class="text-sm text-pure-white/60">
+                    &copy; <span id="current-year"></span> MAAS MODERN INT'L GROUPS OF SCHOOLS. All rights reserved. 
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // JS for Hamburger Menu Toggle
+        document.getElementById('hamburger-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.remove('hidden');
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // JS for FAQ Accordion
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+
+                // Close all other open items
+                document.querySelectorAll('.faq-content').forEach(otherContent => {
+                    if (otherContent !== content && otherContent.style.maxHeight) {
+                        otherContent.style.maxHeight = null;
+                        otherContent.previousElementSibling.querySelector('.faq-icon').classList.remove('rotate-180');
+                    }
+                });
+
+                // Toggle the current item
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.classList.remove('rotate-180');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+
+        // JS for Current Year in Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // JS for Image Overlap (if needed for About Section)
+        document.addEventListener('DOMContentLoaded', () => {
+            const overlapImage = document.getElementById('overlap-image');
+            const bigImage = document.getElementById('big-image');
+
+            if (overlapImage && bigImage) {
+                const updatePosition = () => {
+                    if (window.innerWidth >= 1024) { // Apply only on large screens (lg:)
+                        const bigImageRect = bigImage.getBoundingClientRect();
+                        
+                        // Position the overlap image relative to the bottom right of the big image
+                        const left = bigImageRect.width * 0.7; // 70% from the left
+                        const top = bigImageRect.height * 0.75; // 75% from the top
+                        
+                        overlapImage.style.position = 'absolute';
+                        overlapImage.style.top = `${top}px`;
+                        overlapImage.style.left = `${left}px`;
+                        overlapImage.style.display = 'block';
+                    } else {
+                        overlapImage.style.display = 'none';
+                    }
+                };
+
+                updatePosition();
+                window.addEventListener('resize', updatePosition);
+            }
+        });
+
+        // JS for Header Slideshow
+        const slides = document.querySelectorAll('#slideshow .slide');
+        let currentSlide = 0;
+        const slideInterval = setInterval(nextSlide, 5000); // Change image every 5 seconds
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+</html>
